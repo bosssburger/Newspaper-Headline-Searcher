@@ -15,7 +15,7 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-// News API key: 3c27ffde4f164328b95f92e4e80bdc67
+// News API key: NA
 
 public class HeadlineScanner {
 	private static File HISTORY_STORAGE = new File("bin/history.txt");
@@ -69,6 +69,7 @@ public class HeadlineScanner {
 		
 		// Interact with API
 		// Example source: cnn
+		//========================ADD DESIRED SOURCES AND API KEY BELOW=========================
 		// Add desired sources to source parameter
 		keywords = keywords.replaceAll("[ ]", "+");
 		String params = "q=" + keywords
@@ -77,7 +78,7 @@ public class HeadlineScanner {
 				+ "&from=" + LocalDate.now().minusDays(2)
 				+ "&to=" + LocalDate.now().toString()
 				+ "&sortBy=popularity"
-				+ "&apiKey=3c27ffde4f164328b95f92e4e80bdc67";
+				+ "&apiKey=";
 		String jsonResponse = "no response";
 		try {
 			HttpRequest searchReq = HttpRequest.newBuilder()
@@ -149,3 +150,4 @@ public class HeadlineScanner {
 		}
 	}
 }
+
