@@ -4,7 +4,7 @@ The Newspaper Headline Search application uses NewsAPI to search headlines from 
 
 ### Before Using
 
-In order to use the application, first acquire a free or paid API key from [NewsAPI](newsapi.org). Place the key at the location designated by a comment in the HeadlineModel.java file.
+In order to use the application, first acquire a free or paid API key from [NewsAPI](newsapi.org). Place the key at the location designated by a comment in the HeadlienScanner.java file.
 Then add a list of desired sources in the sources parameter of the api call or remove the parameter completely to search the entire base. The application can then be compiled to a .jar or .exe and run directly from the HeadlineApplication.java main.
 
 ### Development Notes
